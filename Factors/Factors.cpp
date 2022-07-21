@@ -9,10 +9,16 @@ int main()
 
     std::cout << "The factors of " << number << " are: " << std::endl;
 
-    for (int i = 2; i <= number; i++) {
-        while (number % i == 0){
+    std::cout << 1 << std::endl;
+
+    signed int remainder = number;
+
+    for (int i = 2; i <= remainder; i++) {
+        while (remainder% i == 0){
             std::cout << i << std::endl;
-            number /= i;
+            remainder/= i;
         }
     }
+
+    std::cout << number << std::endl;
 }
